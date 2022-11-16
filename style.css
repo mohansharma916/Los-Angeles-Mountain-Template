@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: relative;
+    background-size: cover;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: 1.5rem auto;
+}
+ 
+nav .left-nav {
+    margin-left: 20%;
+}
+
+nav .left-nav img {
+    width: 25px;
+}
+
+nav .right-nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+nav .right-nav a{
+    font-size: 15px;
+
+}
+header img.main-background {
+    width: 100%;
+}
+
+header img.left-mountain{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 55%;
+    top: 50%;
+    z-index: 1;
+    
+}
+header img.right-mountain{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 50%;
+    top: 50%;
+    z-index: 1;
+    
+}
+header img.text{
+    position:absolute;
+    top:30%;
+    left:32%;
+    width:44%;  
+}
+
+
+
+/***********************************************
+******************* Divider 
+************************************************/
+
+.middle{
+    top:5%;
+    display:flex;
+    padding-top: 4%;
+}
+.middle .divider{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+.middle .text{
+    width:40%;
+    display: flex;
+    justify-content: flex-end;
+    gap:3rem;
+
+}
+
+/***********************************************
+******************* Second Page
+************************************************/
+
+.second-page{
+    position: relative;
+}
+
+.second-page .mountain img{
+    width:100%;
+}
+.history{
+    position:absolute;
+    font-family: sans-serif;
+    top:4%;
+    left:25%;
+    font-size: 30px;
+    display: flex;
+}
+.history h1{
+    font-weight: 300;
+    font-size: 100px;
+    color: #41516B;
+    opacity: 0.45;
+
+}
+.history p{
+    font-size: 20px;
+    align-self: center;
+    margin-left: -20%;
+    margin-top: 10%;
+    color: #41516B;
+    opacity: 0.8;
+
+}
+
+.history-description{
+    position:absolute;
+    top:22%;
+    width:60%;
+    left:27%;
+    
+}
+.history-description p{
+    font-size: 10px;
+    left:25%;
+    color:#2E2D2D;
+}
+
+
+
+.shadow{
+    width:100%;
+    position: absolute;
+    padding: 26px 0px;
+    background-color: #39455D;
+    opacity: 0.85;
+    bottom:0%;
+    
+}
+.shadow .image{
+    
+    display: flex;
+    justify-content: center;
+    gap:4px;
+}
+.shadow .dots h3{
+    font-size: larger;
+    color:darkgrey;
+    text-align: center;
+}
+.first-dot{
+    color:white;
+}
+
+@media only screen and (max-width:600px) {
+    .shadow {
+        padding: 10px 0px;
+    }
+}
+/***********************************************
+******************* Climb Section 
+************************************************/
+
+.climb{
+    font-family: sans-serif;
+}
+
+.climb .heading{
+    left:25%;
+    display: flex;
+    margin-left: 25%;
+}
+.climb .heading h2{
+    font-weight: 300;
+    font-size: 100px;
+    color: #41516B;
+    opacity: 0.45;
+}
+.climb .heading  h3{
+    font-size: 20px;
+    margin-left:-2.0% ;
+    margin-top: 3.5%;
+    color: #41516B;
+    opacity: 0.8;
+    font-weight: 500;
+    align-self: center;
+}
+.climb .heading p{
+    width:40%;
+    margin-top: 7%;
+    margin-left: 10%;
+    font-size: 8px;
+    color: #41516B;
+    opacity: 0.8;
+}
+
+.third-page {
+    position: relative;
+    bottom:-4px;
+}
+ 
+.third-page .mountain-count{
+    padding:16px;
+    background-color:#414F6A;
+    
+    
+}
+.third-page .mountain-count a{
+    color:#414F6A;
+}
+
+
+.third-page .mountain-count a.mountain1{
+    margin-left: 25%;
+    background-color: #B0B4BF;
+    padding:16px;
+}
+.third-page .mountain-count a.mountain2{
+    color:#B0B4BF;
+    margin-left: 2%;
+
+}
+
+.third-page .mountain-img img{
+    width: 100%;
+}
+
+.third-page .filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.third-page .filter .schedule-table {
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    width: 40%;
+    height: 200px;
+    background-color: #D6D4D7;
+    opacity: 0.9;
+}
+.third-page .filter .schedule-table table th{
+    color:#424E67;
+    padding:5%;
+    font-size: 30px;
+    font-weight: 300;
+}
+.third-page .filter .schedule-table table td{
+    padding: 5px;
+
+}
+
+footer {
+    padding:18px;
+    background-color: #414F6A;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+footer img{
+    margin-left:12rem;
+    width:10%;
+
+}
+footer p{
+    color: #617193;
+    font-size: 10px;
+}
+
+
+@media only screen and  (max-width:600px){
+    nav .right-nav a{
+        font-size: 10px; 
+    }
+    nav .left-nav img {
+        width: 15px;
+    }
+    nav{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 75%;
+        margin: 1.5rem auto;
+    }
+    header img.text{
+        position:absolute;
+        top:33%;
+        left:32%;
+        width:30%;  
+    }
+    header img.left-mountain{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width: 55%;
+        top: 44%;
+        z-index: 1;     
+    }
+    header img.right-mountain{
+        position: absolute;
+        right:0;
+        bottom:0;
+        width: 50%;
+        top: 44%;
+        z-index: 1;
+        
+    }
+    .image img {
+        width: 50px;
+    }
+    .middle{
+        padding-top:3px;
+
+    }
+    .divider img{
+        width:60px;
+    }
+    .middle .text a{
+        font-size: 8px;
+    }
+    .history h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .history p{
+        font-size: 16px;
+        align-self: center;
+        margin-left: -10%;
+        margin-top: 5%;
+        color: #41516B;
+        opacity: 0.8;
+}  
+.history-description p{
+    font-size: 7px;
+    left:26%
+}
+.shadow{
+    width:100%;
+    position: absolute;
+    padding: 0px 0px;
+    background-color: #39455D;
+    opacity: 0.85;
+    bottom:0%;
+    
+}
+.image img{
+    width:45px;
+    margin-top: 5%;
+}
+.shadow .dots h3{
+    font-size: larger;
+    color:darkgrey;
+    text-align: center;
+    }
+    section.climb .heading{
+        align-self: center;
+    }
+
+
+section.climb .heading h2{
+    font-size: 40px;
+    font-weight: 300;
+    align-self: center;
+
+}
+section.climb .heading h3{
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.climb .heading p{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 8%;
+    font-size: 8px;
+    color: #41516B;
+    opacity: 0.8;
+}
+.third-page .mountain-count{
+    padding: 6px;;
+}
+.third-page .mountain-count a.mountain1{
+    padding: 8px;
+    font-size: 12px;
+}
+.third-page .mountain-count a.mountain2{
+    padding: 8px;
+    font-size: 12px;
+}
+.third-page .filter .schedule-table {
+    position: absolute;
+    top: 24%;
+    left: 18%;
+    width: 43%;
+    height: 100px;
+    background-color: #D6D4D7;
+    opacity: 0.9;
+}
+.third-page .mountain-img img{
+    width:100%;
+}
+footer {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding:5px;
+}
+.third-page .filter .schedule-table table th {
+    color: #424E67;
+    padding-top:5px;
+    padding-bottom: 2px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.third-page .filter .schedule-table table td{
+    left:10%;
+    padding:0px;
+    font-size: 8px;
+}
+footer img {
+    width: 12%;
+    height:26px;
+}
+
+
+}
